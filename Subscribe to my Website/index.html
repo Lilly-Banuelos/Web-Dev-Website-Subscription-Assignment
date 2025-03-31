@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to my Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--
+        Name: Lilly Jarvis
+        Date: 02/15/23
+        Purpose: This program will be a form that accepts a user's first name, last name, and selection of preferred contact. The information will be displayed on the page.
+    -->
+</head>
+<body>
+    <div id="innerBody">
+        <!-- Added decoration stuff -->
+        <h1>The Spicy Chef</h1>
+        <img src="food3.gif" alt="foodPic1" class="foodPic">
+        <img src="food4.gif" alt="foodPic2" class="foodPic">
+        <img src="food2.gif" alt="foodPic3" class="foodPic">
+        <h3>Hello fello food enthusiast! To subscibe for firecracker recipes each week, fill out the form below!</h3>
+
+        <!-- This is where the form will go -->
+        <form action="" method="post">
+            <!-- Label and field to enter first name into -->
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName">
+
+            <br><br>
+
+            <!-- Label and field to enter last name into -->
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName">
+
+            <br><br>
+
+            <!-- Label and field to choose from a selection of different contact ways -->
+            <label for="prefContact">Preferred Contact</label>
+            <select name="prefContact" id="prefContact">
+                <!-- Options -->
+                <option value="email">Email</option>
+                <option value="text">Text</option>
+                <option value="live chat">Live Chat</option>
+                <option value="cell">Cell</option>
+                <option value="social media">Social Media</option>
+            </select>
+        </form>
+
+        <br>
+
+        <!-- This is the subscribe button that has an event listener that when clicked gets teh information in the text and selection boxes -->
+        <button id="subBtn">Subscribe</button>
+
+        <div id="display"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
